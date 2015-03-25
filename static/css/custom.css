@@ -15,3 +15,11 @@
 .short-header .scroll-down {
   display: none;
 }
+
+.main-header a {
+  text-decoration: none;
+}
+
+.icon-linkedin:before {
+    content: "\f208";
+}

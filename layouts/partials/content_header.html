@@ -32,6 +32,11 @@
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
+            {{ if .Site.Params.linkedinName }}
+                <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedinName }}">
+                  <span class="icon-linkedin" style="color:white;font-size:2em"></span>
+                </a>
+            {{end}}
             {{ if .Site.Params.githubName }}
                 <a  href="https://github.com/{{ .Site.Params.githubName }}">
                   <span class="icon-github" style="color:white;font-size:2em"></span>

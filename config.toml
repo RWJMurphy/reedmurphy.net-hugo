@@ -1,11 +1,11 @@
 theme = "casper"
 baseurl = "http://reedmurphy.net/"
 languageCode = "en-us"
-title = "ReedMurphy.net"
+title = "/Reed( Kraft-)?Murphy(.net)?/"
 copyright = "© 2015 Reed Kraft-Murphy"
 
 [Params]
-description = "Collected rambling"
+description = "the ramblings of a devops engineer and polymath"
 cover = "/img/quarternion.png"
 author = "Reed Kraft-Murphy"
 githubName = "RWJMurphy"

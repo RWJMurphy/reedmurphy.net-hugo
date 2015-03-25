@@ -20,6 +20,13 @@
   text-decoration: none;
 }
 
+.page-title a,
+.page-title a:hover,
+.page-title a:active,
+.page-title a:visited {
+  color: inherit;
+}
+
 .icon-linkedin:before {
     content: "\f208";
 }

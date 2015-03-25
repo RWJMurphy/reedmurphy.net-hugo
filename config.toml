@@ -1,7 +1,7 @@
 theme = "casper"
 baseurl = "http://reedmurphy.net/"
 languageCode = "en-us"
-title = "/Reed( Kraft-)?Murphy(.net)?/"
+title = "/Reed( Kraft-)?Murphy(\\.net)?/"
 copyright = "© 2015 Reed Kraft-Murphy"
 DisqusShortname = "reedmurphy"
 

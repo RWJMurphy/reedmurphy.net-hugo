@@ -6,6 +6,7 @@ copyright = "© 2015 Reed Kraft-Murphy"
 DisqusShortname = "reedmurphy"
 
 [Params]
+googleAnalyticsUserID = "UA-25443368-1"
 description = "the ramblings of a devops engineer and polymath"
 cover = "/img/quarternion.png"
 author = "Reed Kraft-Murphy"

@@ -1,0 +1,33 @@
+theme = "casper"
+baseurl = "http://reedmurphy.net/"
+languageCode = "en-us"
+title = "ReedMurphy.net"
+copyright = "© 2015 Reed Kraft-Murphy"
+
+[Params]
+description = "Collected rambling"
+cover = "/img/quarternion.png"
+author = "Reed Kraft-Murphy"
+githubName = "RWJMurphy"
+twitterName = "RWJKM"
+paginate = 10
+dateform = "Mon, Jan 2, 2006"
+dateformat = "Mon, Jan 2, 2006"
+
+[[menu.main]]
+name = "Blog"
+weight = -120
+identifier = "blog"
+url = "/#content"
+
+[[menu.main]]
+name = "About"
+weight = -110
+identifier = "about"
+url = "/page/about"
+
+[[menu.main]]
+name = "Resume"
+weight = -100
+identifier = "resume"
+url = "/page/resume"

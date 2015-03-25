@@ -1,0 +1,17 @@
+.post.page .post-meta,
+.post.page .post-footer,
+
+.post.resume .post-header,
+.post.resume .post-meta,
+.post.resume .post-footer {
+  display: none;
+}
+
+.short-header,
+.post-head.short-header {
+  height: 33vh;
+}
+
+.short-header .scroll-down {
+  display: none;
+}

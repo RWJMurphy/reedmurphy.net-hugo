@@ -19,18 +19,24 @@ dateformat = "Mon, Jan 2, 2006"
 
 [[menu.main]]
 name = "Blog"
-weight = -120
+weight = 0
 identifier = "blog"
 url = "/#content"
 
 [[menu.main]]
 name = "About"
-weight = -110
+weight = 10
 identifier = "about"
 url = "/page/about"
 
 [[menu.main]]
 name = "Resume"
-weight = -100
+weight = 20
 identifier = "resume"
 url = "/page/resume"
+
+[[menu.main]]
+name = "Privacy"
+weight = 100
+identifier = "privacy"
+url = "/page/privacy"

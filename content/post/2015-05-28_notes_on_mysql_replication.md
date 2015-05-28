@@ -10,7 +10,9 @@ tags:
 title: "Clones, Doppelgängers, Threads and Slaves: Notes On MySQL Replication"
 ---
 
-Notes on MySQL replication terminology, how to interpret the results of `SHOW SLAVE STATUS` and `SHOW MASTER STATUS`, and how to correctly configure new slave and master hosts in your MySQL clusters.
+Notes on MySQL replication terminology, how to interpret the results of `SHOW SLAVE STATUS` and `SHOW MASTER STATUS`, and how to correctly configure replication for new slave and master hosts in your MySQL clusters.
+
+Note that the technical details of e.g. cloning a MySQL server aren't covered; let's consider them left as exercises for the reader.
 
 <!--more-->
 

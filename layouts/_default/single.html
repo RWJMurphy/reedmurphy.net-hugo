@@ -33,7 +33,6 @@
     </figure>
     {{end}}
 
-
     <section class="author">
         <h4><a href="{{.Site.BaseURL}}">{{.Site.Params.author}}</a></h4>
         {{if .Site.Params.bio}}
@@ -46,8 +45,6 @@
             {{if .Site.Params.authorwebsite}}<span class="author-link icon-link"><a href="{{.Site.Params.authorwebsite}}">{{.Site.Params.authorwebsite}}</a></span>{{end}}
         </div>
     </section>
-
-
 
     <section class="share">
       <h4>Share this post</h4>
@@ -63,6 +60,10 @@
          onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
           <span class="hidden">Google+</span>
       </a>
+    </section>
+
+    <section class="sponsored">
+      <div id="ayboll-w-2939"></div><script type="text/javascript">window._aybollw=window._aybollw||[];_aybollw.push(["id", "2939"]);</script>
     </section>
 
     {{ if ne .Params.comments false}}

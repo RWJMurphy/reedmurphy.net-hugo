@@ -1,7 +1,6 @@
 ---
 comments: false
 date: "2015-05-28T15:16:51+10:00"
-draft: true
 image: ""
 slug: "privacy"
 title: "Privacy Policy"

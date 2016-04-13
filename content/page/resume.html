@@ -55,13 +55,12 @@ type: raw
         <h3>DevOps</h3>
         <ul class="list-inline">
             <li class="label label-default">Continuous Integration</li>
-            <li class="label label-default">Bamboo</li>
-            <li class="label label-default">Jenkins</li>
             <li class="label label-default">Infrastructure as Code</li>
-            <li class="label label-default">CloudFormation</li>
             <li class="label label-default">Configuration Management</li>
             <li class="label label-default">Puppet</li>
             <li class="label label-default">Ansible</li>
+            <li class="label label-default">Chef</li>
+            <li class="label label-default">Salt</li>
             <li class="label label-default">LeanKit</li>
             <li class="label label-default">Version Control</li>
             <li class="label label-default">git</li>
@@ -72,17 +71,18 @@ type: raw
         <ul class="list-inline">
             <li class="label label-default">Ruby</li>
             <li class="label label-default">Python</li>
-            <li class="label label-default">PHP</li>
             <li class="label label-default">Go</li>
+            <li class="label label-default">PHP</li>
             <li class="label label-default">SQL</li>
         </ul>
       </div>
       <div class="col-md-2 col-sm-3 col-xs-4">
         <h3>High Availability</h3>
         <ul class="list-inline">
+            <li class="label label-default">System Architecture</li>
+            <li class="label label-default">Capacity Planning</li>
             <li class="label label-default">Akamai</li>
             <li class="label label-default">Load Balancing</li>
-            <li class="label label-default">ELB</li>
             <li class="label label-default">Autoscaling</li>
             <li class="label label-default">Disaster Recovery</li>
         </ul>
@@ -184,23 +184,24 @@ type: raw
           </em>
         </p>
 
-        <p>REA owns and operates the leading real estate and commercial property advertising sites in Australia, realestate.com.au and realcommercial.com.au, as well as international real estate advertising sites such as the market-leading Italian property site, casa.it.</p><p>REA Group operates property websites across Australia, Europe and Asia, with most of the sites ranked first in their respective market. Together, REA’s multinational portfolio of websites is visited by over 11 million unique browsers each month. Across the globe, REA employs over 700 individuals who are passionate about digital media and the opportunity to deliver innovative real estate services to customers and consumers.</p><p>As a Site Performance and Availability Engineer I am responsible for implementing key components of a variety of web products in a collaborative team environment. I work within the agile delivery team with a focus on running software at scale with 99.95% uptime and 8-second page render SLAs.</p><p>I help design solutions that run at scale and use infrastructure-as-code techniques to deploy and operate complex systems. Additionally, I share out-of-hours responsibility of the availability and performance of solutions with a pool of other Site Performance and Availability Engineers.</p>
+        <p>REA Group Limited is a multinational digital advertising company specialising in property.</p><p>As a Site Performance and Availability Engineer I was responsible for implementing key components of many web application in a collaborative environment. I helped design solutions that run at scale and used infrastructure-as-code techniques to deploy and operate complex systems. Additionally, I shared on-call responsibility with a pool of other engineers.</p>
         <ul>
-            <li>Migrated our Atlassian Bamboo infrastructure to Amazon Web Services.</li>
-            <li>Used CloudFormation and cfn-init to automate the build, deployment and updating of Bamboo build agents.</li>
-            <li>Application monitoring via Amazon CloudWatch custom metrics and monitoring with PagerDuty alerting</li>
-            <li>Participated in an on call rotation, both in an out of hours and as primary and escalation</li>
-            <li>Participated in a change request process involving many stakeholders across multiple business units</li>
-            <li>Worked with complex, globally distributed, high-availability architecture under strict SLAs</li>
-            <li>Wrote tooling in Ruby to extend on CloudFormation templates and manage stacks</li>
-            <li>Wrote a tool in <code>sh</code> to send messages to Slack via their HTTP API</li>
-            <li>Performed load testing on a cloned production MySQL database using generated production-like queries</li>
-            <li>Planned Amazon RDS disaster recovery</li>
-            <li>Built a Slack / Leankit integration for managing daily change planning and announcements</li>
-            <li>Generated <code>.dot</code> graphs of CloudFormation resources from CloudFormation stacks</li>
-            <li>Participated in company-wide security responses (to Heartbleed, Shellshock and Ghost) involving assessing our infrastructure for vulnerability, patching vulnerable systems, monitoring for attacks, etc.</li>
+            <li>Maintained and worked with globally distributed, high-availability architecture under strict SLAs</li>
             <li>Worked directly in project teams, taking responsibility for monitoring, disaster recovery and automation</li>
+            <li>Worked on a team responsible for the operation, maintenance and deprecation of key legacy systems</li>
             <li>Built and maintained continuous integration, testing, delivery and deployment pipelines and infrastructure</li>
+            <li>Built tools in Ruby to manage CloudFormation templates and stacks</li>
+            <li>Migrated our Atlassian Bamboo infrastructure to AWS</li>
+            <li>Used CloudFormation and cfn-init to automate the build, deployment and updating of Bamboo build agents</li>
+            <li>Planned and executed Amazon RDS disaster recovery processes</li>
+            <li>Generated GraphViz graphs of CloudFormation resources from CloudFormation stacks</li>
+            <li>Wrote a pure sh tool to post messages to Slack</li>
+            <li>Designed, planned and implemented load testing on a cloned production MySQL database using generated production-like queries</li>
+            <li>Built a Slack / Leankit integration for managing daily change planning and announcements</li>
+            <li>Implemented application monitoring using CloudWatch and PagerDuty</li>
+            <li>Participated in an on call rotation, both in an out of hours and as primary and escalation</li>
+            <li>Participated in company-wide security responses involving assessing our infrastructure for vulnerability, patching vulnerable systems, monitoring for attacks, etc.</li>
+            <li>Participated in a change request process involving stakeholders across multiple business units</li>
         </ul>
       </div>
       <div class="col-md-12">

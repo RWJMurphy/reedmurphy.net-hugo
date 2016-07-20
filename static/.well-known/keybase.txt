@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/rwjkm
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://reedmurphy.net
+  * I am rwjkm (https://keybase.io/rwjkm) on keybase.
+  * I have a public key ASAnAcoGZYKaxcX7oMKagPs5kmlUciETmdqUyKhHFRdNFwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01010fda3399a0e9fd989eedaf4ea98191160bf2a8b4c0827638faf82e8ad30e97f10a",
+            "host": "keybase.io",
+            "kid": "01202701ca0665829ac5c5fba0c29a80fb3992695472211399da94c8a84715174d170a",
+            "uid": "b8686f16d05314196e96b7461251b519",
+            "username": "rwjkm"
+        },
+        "service": {
+            "hostname": "reedmurphy.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.16"
+    },
+    "ctime": 1468973164,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1468973152,
+        "hash": "127609385813c1f0f9b82af0bc73c0b6e7b2ff4f0de3e83c2d1457e811f6d63f62d09d200ff42bfc6dfd01c14cd467a9c2f7c562904ae0b7e357d9a86db944ad",
+        "seqno": 532655
+    },
+    "prev": "4bb0fc52600242f7dcd904456f8a9dcd09900d00b636a0d502108567c98b6056",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgJwHKBmWCmsXF+6DCmoD7OZJpVHIhE5nalMioRxUXTRcKp3BheWxvYWTFAvJ7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxMGZkYTMzOTlhMGU5ZmQ5ODllZWRhZjRlYTk4MTkxMTYwYmYyYThiNGMwODI3NjM4ZmFmODJlOGFkMzBlOTdmMTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMjcwMWNhMDY2NTgyOWFjNWM1ZmJhMGMyOWE4MGZiMzk5MjY5NTQ3MjIxMTM5OWRhOTRjOGE4NDcxNTE3NGQxNzBhIiwidWlkIjoiYjg2ODZmMTZkMDUzMTQxOTZlOTZiNzQ2MTI1MWI1MTkiLCJ1c2VybmFtZSI6InJ3amttIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJyZWVkbXVycGh5Lm5ldCIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTYifSwiY3RpbWUiOjE0Njg5NzMxNjQsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ2ODk3MzE1MiwiaGFzaCI6IjEyNzYwOTM4NTgxM2MxZjBmOWI4MmFmMGJjNzNjMGI2ZTdiMmZmNGYwZGUzZTgzYzJkMTQ1N2U4MTFmNmQ2M2Y2MmQwOWQyMDBmZjQyYmZjNmRmZDAxYzE0Y2Q0NjdhOWMyZjdjNTYyOTA0YWUwYjdlMzU3ZDlhODZkYjk0NGFkIiwic2Vxbm8iOjUzMjY1NX0sInByZXYiOiI0YmIwZmM1MjYwMDI0MmY3ZGNkOTA0NDU2ZjhhOWRjZDA5OTAwZDAwYjYzNmEwZDUwMjEwODU2N2M5OGI2MDU2Iiwic2Vxbm8iOjcsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RALSLaw3RHJJOZiAiJRFvztOe3y7Y5eQxH/kcKOEvZn1y7dn9AjLbsfAETuW6rJWSLFMShzHwfLHiBiBZP3A3eBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIG4SH2/Q4fsKGkJPElTcQtcsD/4QWAoNRtrMRuuRWRZxo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rwjkm
+
+==================================================================

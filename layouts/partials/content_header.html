@@ -1,25 +1,23 @@
-{{ $image := or .Params.cover .Site.Params.cover }}
-{{ $isFront := eq .URL "/" }}
-{{ $.Scratch.Set "isPage1" false }}
-{{ if .IsNode }}
-  {{ and .IsNode .Paginator.PageNumber | eq 1 | $.Scratch.Set "isPage1" }}
-{{ end }}
-{{ $long_header := $.Scratch.Get "isPage1" | and $isFront }}
-
-{{ if $long_header }}
-{{ if $image }}
+{{- $image := or .Params.cover .Site.Params.cover -}}
+{{- $isFront := eq .URL "/" -}}
+{{- $.Scratch.Set "isPage1" false -}}
+{{- if .IsNode -}}
+  {{- and .IsNode .Paginator.PageNumber | eq 1 | $.Scratch.Set "isPage1" -}}
+{{- end -}}
+{{- $long_header := $.Scratch.Get "isPage1" | and $isFront -}}
+{{- if $long_header -}}
+{{- if $image -}}
 <header class="main-header" style="background-image: url({{$image}})">
-{{ else }}
+{{- else -}}
 <header class="main-header no-cover">
-{{ end }}
-{{ else }}
-{{ if $image }}
+{{- end -}}
+{{- else -}}
+{{- if $image -}}
 <header class="main-header short-header" style="background-image: url({{$image}})">
-{{ else }}
+{{- else -}}
 <header class="main-header short-header no-cover">
-{{ end }}
-{{ end }}
-
+{{- end -}}
+{{- end }}
     <nav class="main-nav overlay clearfix">
         {{ if .Site.Params.logo }}
             <a class="blog-logo" href="{{ .Permalink }}"><img src="{{.Site.BaseURL}}{{ .Site.Params.logo }}" alt="Blog Logo" /></a>

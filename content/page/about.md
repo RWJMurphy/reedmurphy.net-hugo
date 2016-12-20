@@ -24,3 +24,4 @@ I'm also somewhat active on other bits of the web.
 * **GitHub:**: [@RWJMurphy](https://github.com/RWJMurphy)
 * **LinkedIn:** [reedkraftmurphy](http://au.linkedin.com/in/reedkraftmurphy)
 * **Unix and Linux StackExchange:** [reed-kraft-murphy](http://unix.stackexchange.com/users/30674/reed-kraft-murphy)
+* **Twitter**: [@RWJKM](https://twitter.com/RWJKM)

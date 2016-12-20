@@ -36,7 +36,7 @@ To start, here's MySQL's own definition of the threads involved in replication:
 
 `SHOW MASTER STATUS` tells us where the **Binlog dump thread** has written up to:
 
-```no-highlight
+```
 root@db01 $ mysql -e 'SHOW MASTER STATUS\G'
 *************************** 1. row ***************************
             File: master.014884
@@ -56,7 +56,7 @@ CHANGE MASTER TO MASTER_HOST='db01'
 
 `SHOW SLAVE STATUS` can tell us -- amongst other things -- where the **Slave I/O and SQL threads** are up to:
 
-```no-highlight
+```
 root@db02 $ mysql -e 'SHOW SLAVE STATUS\G'
 *************************** 1. row ***************************
                Slave_IO_State: Waiting for master to send event
@@ -144,7 +144,7 @@ Now the tricky bits:
 
 1. Stop replication on `db02` -- we do this first as we want it to fall a little behind `db01` and `new-db`
 
-    ```no-highlight
+    ```
 root@db02 $ mysql -e 'STOP SLAVE;'
 root@db02 $ mysql -e 'SHOW SLAVE STATUS\G' | grep Running
              Slave_IO_Running: No
@@ -155,7 +155,7 @@ root@db02 $ mysql -e 'SHOW SLAVE STATUS\G' | grep Running
 
 3. Ensure that all writes that made it to `db01` are flushed to disk, and explicitly lock it against any further writes
 
-    ```no-highlight
+    ```
 root@db01 $ mysql
 mysql> FLUSH TABLES WITH READ LOCK;
     ```
@@ -164,7 +164,7 @@ mysql> FLUSH TABLES WITH READ LOCK;
 
 3. Once `new-db01` is in sync with the stalled `db01`, stop replication on `new-db01`
 
-    ```no-highlight
+    ```
 root@new-db01 # mysql -e 'STOP SLAVE;'
 root@new-db01 # mysql -e 'SHOW SLAVE STATUS\G' | grep Running
              Slave_IO_Running: No
@@ -175,7 +175,7 @@ root@new-db01 # mysql -e 'SHOW SLAVE STATUS\G' | grep Running
 
 4. Get the SQL thread state on `new-db01`
 
-    ```no-highlight
+    ```
 root@new-db01 # mysql -e 'SHOW SLAVE STATUS\G' | grep -E "Exec_Master_Log_Pos|Relay_Master_Log_File"
         Relay_Master_Log_File: master.014891
           Exec_Master_Log_Pos: 184690632
@@ -183,7 +183,7 @@ root@new-db01 # mysql -e 'SHOW SLAVE STATUS\G' | grep -E "Exec_Master_Log_Pos|Re
 
 5. Get the binlog thread state on `new-db01`
 
-    ```no-highlight
+    ```
 root@new-db01 # mysql -e 'SHOW MASTER STATUS\G'
 *************************** 1. row ***************************
             File: master.000115
@@ -196,7 +196,7 @@ Binlog_Ignore_DB: monitor
 
 6. Have `db02` resuming slaving off `db01` until it's caught up to the same point as `new-db01`
 
-    ```no-highlight
+    ```
 root@db02 # mysql -e "START SLAVE UNTIL MASTER_LOG_FILE='$Relay_Master_Log_File', MASTER_LOG_POS=$Exec_Master_Log_Pos;"
 root@db02 # mysql -e 'SHOW SLAVE STATUS\G' | grep -E "_Running|Until_"
              Slave_IO_Running: Yes
@@ -210,7 +210,7 @@ root@db02 # mysql -e 'SHOW SLAVE STATUS\G' | grep -E "_Running|Until_"
 
 7. Stop replication on `db02`
 
-    ```no-highlight
+    ```
 root@db02 # mysql -e 'STOP SLAVE;'
 root@db02 # mysql -e 'SHOW SLAVE STATUS\G' | grep Running
              Slave_IO_Running: No
@@ -221,13 +221,13 @@ root@db02 # mysql -e 'SHOW SLAVE STATUS\G' | grep Running
 
 8. Slave `db02` off `new-db01` starting at the end of `new-db01`'s binlogs (i.e. the `File` and `Position` values from `SHOW MASTER STATUS` above)
 
-    ```no-highlight
+    ```
 root@db02 # mysql -e "CHANGE MASTER TO MASTER_HOST='new-db01', MASTER_LOG_FILE='$File', MASTER_LOG_POS=$Position;"
     ```
 
 9. Start replication on `db02`
 
-    ```no-highlight
+    ```
 root@db02 # mysql -e 'START SLAVE;'
     ```
 
@@ -235,7 +235,7 @@ root@db02 # mysql -e 'START SLAVE;'
 
 10. Check that replication on `db02` is happy
 
-    ```no-highlight
+    ```
 root@db02 # mysql -e 'SHOW SLAVE STATUS\G'
     ```
 

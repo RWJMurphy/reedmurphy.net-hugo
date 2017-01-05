@@ -15,19 +15,19 @@ summary: I hereby commit to the neveragain.tech pledge. Please stand with me and
 >
 > * We refuse to participate in the creation of databases of identifying information for the United States government to target individuals based on race, religion, or national origin.
 > * We will advocate within our organizations:
-  > * to minimize the collection and retention of data that would facilitate ethnic or religious targeting.
-  > * to scale back existing datasets with unnecessary racial, ethnic, and national origin data.
-  > * to responsibly destroy high-risk datasets and backups.
-  > * to implement security and privacy best practices, in particular, for end-to-end encryption to be the default wherever possible.
-  > * to demand appropriate legal process should the government request that we turn over user data collected by our organization, even in small amounts.
+>   * to minimize the collection and retention of data that would facilitate ethnic or religious targeting.
+>   * to scale back existing datasets with unnecessary racial, ethnic, and national origin data.
+>   * to responsibly destroy high-risk datasets and backups.
+>   * to implement security and privacy best practices, in particular, for end-to-end encryption to be the default wherever possible.
+>   * to demand appropriate legal process should the government request that we turn over user data collected by our organization, even in small amounts.
 > * If we discover misuse of data that we consider illegal or unethical in our organizations:
-  > * We will work with our colleagues and leaders to correct it.
-  > * If we cannot stop these practices, we will exercise our rights and responsibilities to speak out publicly and engage in responsible whistleblowing without endangering users.
-  > * If we have the authority to do so, we will use all available legal defenses to stop these practices.
-  > * If we do not have such authority, and our organizations force us to engage in such misuse, we will resign from our positions rather than comply.
+>   * We will work with our colleagues and leaders to correct it.
+>   * If we cannot stop these practices, we will exercise our rights and responsibilities to speak out publicly and engage in responsible whistleblowing without endangering users.
+>   * If we have the authority to do so, we will use all available legal defenses to stop these practices.
+>   * If we do not have such authority, and our organizations force us to engage in such misuse, we will resign from our positions rather than comply.
 > * We will raise awareness and ask critical questions about the responsible and fair use of data and algorithms beyond our organization and our industry.
 
-```
+```text
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
